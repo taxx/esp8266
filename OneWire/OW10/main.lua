@@ -7,7 +7,7 @@ data = "" -- data to be uploaded to thingspeak
 temp = ""
 shortSleep = 0 -- indicating shortsleep or normal sleep depending on the temperature of the sauna
 --Rember to set this to false when running on battery! :-)
-debug = true -- true here equals shorter deep sleep
+debug = false -- true here equals shorter deep sleep
  
 function sendData(data, shortSleep)
    print("Sending data")
@@ -96,7 +96,7 @@ for x = 1, table.getn(addrs) do
      --print("shortsleep!")
      shortSleep = 1
    end
-
+   counter = counter + 1
 end
 
 t = nil
