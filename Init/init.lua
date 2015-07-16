@@ -40,5 +40,5 @@ end )
 
 count=0
 dofile("config.lua") -- loading settings from file
-readvdd()
+--readvdd()
 wait_wifi()

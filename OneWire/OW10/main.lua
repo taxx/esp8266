@@ -72,7 +72,7 @@ counter = 1
 
 if voltage ~= nil then
   data = "&field1".."="..voltage
-  counter = 2
+  counter = counter + 1
 end
 
 -- stop using x here
